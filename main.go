@@ -19,6 +19,7 @@ const (
 	slackWebhook                 = `` //`https://hooks.slack.com/services/...`
 	numberOfDays                 = 15
 	slackUserID                  = `` //`<@slackuseID>`
+	sleepTimeInSeconds           = 60
 )
 
 func main() {
@@ -66,7 +67,7 @@ func main() {
 
 		}
 		fmt.Printf("-------------- \n\n\n")
-		time.Sleep(60 * time.Second)
+		time.Sleep(sleepTimeInSeconds * time.Second)
 	}
 }
 
